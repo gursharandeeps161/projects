@@ -1,0 +1,82 @@
+:root {                   /* CSS stylesheet */
+    --unit: calc(100vh / 21);
+    --unit1: calc(var(--unit) - 16px);
+    --unit2: calc(var(--unit) * 2 - 16px);
+    --unit3: calc(var(--unit) * 3 - 16px);
+    --unit5: calc(var(--unit) * 5 - 16px);
+    --unit8: calc(var(--unit) * 8 - 16px);
+    --unit13: calc(var(--unit) * 13 - 16px);
+    --unit21: calc(var(--unit) * 21 - 16px);
+  }
+  body {
+    background: lightgray;
+    width: 100vw;
+    height: 100vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: 2px solid red;
+  }
+  .div21 {
+    background-color: green;
+    width: var(--unit21);
+height: var(--unit21)
+  }
+  .div13 {  
+    background-color: magenta;
+    width: var(--unit13);
+height: var(--unit13);
+left: calc(var(--unit21) );
+
+  }
+  .div3 {   background-color: yellow;
+    width: var(--unit3);
+height: var(--unit3);
+font-size: 3em;
+left: calc(var(--unit) * 21);
+top: calc(var(--unit) * 13 );
+  }
+  .div2 {  background-color: burlywood;
+    width: var(--unit2);
+height: var(--unit2);
+font-size: 2em;
+left: calc(var(--unit) * 24);
+top: calc(var(--unit) * 13);
+  }
+  .div8 {background-color: lightgreen ;
+    width: var(--unit8);
+height: var(--unit8);
+font-size: 8em;
+left: calc(var(--unit) * 26);
+top: calc(var(--unit) * 13);
+  }
+  .div1 {background-color: goldenrod ;
+    width: var(--unit1);
+height: var(--unit1);
+font-size: 1em;
+left: calc(var(--unit) * 24);
+top: calc(var(--unit) * 15);
+  }
+  .div11 {background-color: purple ;
+    width: var(--unit1);
+height: var(--unit1);
+font-size: 1em;
+left: calc(var(--unit) * 25);
+top: calc(var(--unit) * 15);
+  }
+  .div5 {background-color: pur ;
+    width: var(--unit1);
+height: var(--unit1);
+font-size: 5em;
+left: calc(var(--unit) * 21);
+top: calc(var(--unit) * 18);
+  }
